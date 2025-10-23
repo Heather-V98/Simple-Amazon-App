@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Amazon Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Amazon App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header by JS -->
-  <div id="header"></div>
+  <div class="app">
+    <header id="app-header"></header>
+    <main id="view"></main>
+  </div>
 
-  <main>
-    <!-- Products Page -->
-    <section id="products-page">
-      <h1>Products</h1>
-      <div id="product-list" class="product-grid"></div>
-    </section>
-
-    <!-- Checkout Page -->
-    <section id="checkout-page" style="display:none;">
-      <h1>Checkout</h1>
-      <div id="cart-items"></div>
-      <div class="cart-total">
-        <h2>Total: $<span id="total-price">0.00</span></h2>
-      </div>
-    </section>
-  </main>
-
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+

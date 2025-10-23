@@ -1,0 +1,151 @@
+:root {
+  --primary: #232f3e;
+  --accent: #febd69;
+  --light: #f3f3f3;
+  --radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--light);
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header.app-header {
+  background: var(--primary);
+  width: 100vw; 
+  margin-left: calc(50% - 50vw); 
+  margin-right: calc(50% - 50vw);
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.brand h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: black;
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-count {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+/* Product grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.product-info {
+  padding: 10px;
+  flex: 1;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.product-info p {
+  color: #555;
+  font-weight: bold;
+}
+
+.product-info button {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Checkout */
+.checkout-container {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
+
+  
